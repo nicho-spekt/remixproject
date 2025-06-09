@@ -1,0 +1,8 @@
+/**
+ * Minified by jsDelivr using Terser v5.39.0.
+ * Original file: /npm/si@2.0.0/main.js
+ *
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+exports.si=require("./lib/si"),exports.bin=require("./lib/bin"),exports.hms=require("./lib/hms"),exports.format=exports.si.format,exports.parse=exports.si.parse;
+//# sourceMappingURL=/sm/5430bcce4e580c01ecf8c1ef5d4272faf86b9b832c48f05dd0ca067014b1f3ee.map

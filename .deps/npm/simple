@@ -1,0 +1,9 @@
+/**
+ * Minified by jsDelivr using Terser v5.19.2.
+ * Original file: /npm/simple@0.2.0/bin/index.js
+ *
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+#!/usr/bin/env node
+var fs=require("fs"),http=require("http"),path=require("path"),url=require("url"),command=require("commander"),mime=require("mime");command.version("0.1.0").option("-p, --port [port]","Server port [8000]",8e3).option("-h, --host [host]","Hostname [127.0.0.1]","127.0.0.1").option("-d, --default [filename]","Default index [index.html]","index.html").option("-s, --silent","Silent mode").parse(process.argv);var log=function(e,o,t){if(!command.silent){var r=e.headers["x-forwarded-for"]||e.connection.remoteAddress,n="["+(new Date).toUTCString()+"]",a='"'+e.method+" "+o+' HTTP/1.1" '+t;console.log(r+" - - "+n+" "+a+" -")}};http.createServer((function(e,o){var t=url.parse(e.url).pathname;"/"===t&&(t=command.default);var r=path.join(process.cwd(),t);path.exists(r,(function(n){if(!n)return o.writeHead(404,{"Content-Type":"text/plain"}),o.write("404 Not Found\n"),o.end(),void log(e,t,404);o.writeHead(200,{"Content-Type":mime.lookup(r)}),fs.createReadStream(r).pipe(o),log(e,t,200)}))})).listen(command.port,command.host),console.log("Serving HTTP on "+command.host+" port "+command.port+" ...");
+//# sourceMappingURL=/sm/90b67cf5d6c36b956311ca062e8450b66840600ceff500db44d3bdae926f2388.map

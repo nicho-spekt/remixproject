@@ -1,0 +1,8 @@
+/**
+ * Minified by jsDelivr using Terser v5.19.2.
+ * Original file: /npm/sim@1.0.18/lib/index.js
+ *
+ * Do NOT use SRI with dynamically generated files! More information: https://www.jsdelivr.com/using-sri-with-dynamic-files
+ */
+"use strict";exports.db=require("./db"),exports.auth=require("./auth"),exports.cookies=require("./cookies"),exports.project=require("./project"),exports.Handler=require("./handler"),exports.Middleware=require("./middleware"),exports.start=exports.project.start.bind(exports.project);
+//# sourceMappingURL=/sm/e807532733680e980846359f7b59a670f019c8d1b44e5c86203eef1ae164b7d5.map
